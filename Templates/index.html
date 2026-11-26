@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpamGuard | Message Protection</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            <span>Spam<span class="highlight">Guard</span></span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#detector">Spam Detector</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            System Active
+        </div>
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+            <div class="hero-content">
+
+                <div class="tag">
+                    <span>✦</span> SMART MESSAGE PROTECTION
+                </div>
+
+                <h1>
+                    Keep Your Messages
+                    <span>Safe & Secure.</span>
+                </h1>
+
+                <p>
+                    Identify unwanted and suspicious messages
+                    using machine learning. Check your message
+                    instantly with our spam detection system.
+                </p>
+
+                <a href="#detector" class="hero-button">
+                    Try Spam Detector →
+                </a>
+
+                <div class="features">
+                    <div>
+                        <span class="feature-icon">✓</span>
+                        Easy to use
+                    </div>
+                    <div>
+                        <span class="feature-icon">✓</span>
+                        Instant results
+                    </div>
+                    <div>
+                        <span class="feature-icon">✓</span>
+                        ML powered
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <div class="shield">✓</div>
+                <div class="visual-card">
+                    <span class="visual-label">MESSAGE SECURITY</span>
+                    <h3>Your messages matter.</h3>
+                    <p>Check suspicious messages before trusting them.</p>
+                    <div class="security-line">
+                        <span></span>
+                    </div>
+                    <small>Spam detection enabled</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="detector-section" id="detector">
+
+            <div class="section-heading">
+                <span class="small-heading">MESSAGE ANALYZER</span>
+                <h2>Check Your Message</h2>
+                <p>Paste your message below to find out whether it is spam.</p>
+            </div>
+
+            <div class="detector-card">
+
+                <div class="input-heading">
+                    <div>
+                        <h3>Message Analysis</h3>
+                        <p>Enter the text you want to check.</p>
+                    </div>
+
+                    <span class="secure-label">● Secure Check</span>
+                </div>
+
+                <textarea
+                    id="message"
+                    placeholder="Paste or type your message here..."
+                    rows="6"></textarea>
+
+                <div class="input-footer">
+                    <span>Enter a message to begin analysis</span>
+                    <span>Text Analysis</span>
+                </div>
+
+                <button id="checkButton" class="check-button">
+                    Analyze Message <span>→</span>
+                </button>
+
+                <div class="result-box">
+                    <span class="result-icon">✦</span>
+                    <div>
+                        <h4>Detection Result</h4>
+                        <p id="result">Your result will appear here.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="section-heading">
+                <span class="small-heading">ABOUT THE TECHNOLOGY</span>
+                <h2>How SpamGuard Works</h2>
+                <p>A simple process powered by machine learning.</p>
+            </div>
+
+            <div class="steps">
+
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Enter Message</h3>
+                    <p>Type or paste the message you want to analyze.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Text Processing</h3>
+                    <p>The system cleans and prepares the message for analysis.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Prediction</h3>
+                    <p>The trained machine learning model predicts spam or not spam.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            <span>Spam<span class="highlight">Guard</span></span>
+        </div>
+
+        <p>Machine Learning Based Spam Detection System</p>
+        <small>© 2026 SpamGuard. Academic Project.</small>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
